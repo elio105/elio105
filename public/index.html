@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>项目级 DIM 操作手册</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/platform-manual/assets/css/0.styles.444e56a2.css" as="style"><link rel="preload" href="/platform-manual/assets/js/app.fd8db731.js" as="script"><link rel="preload" href="/platform-manual/assets/js/2.5ccdfed2.js" as="script"><link rel="preload" href="/platform-manual/assets/js/1.2c5ca5d0.js" as="script"><link rel="preload" href="/platform-manual/assets/js/37.a77d1b29.js" as="script"><link rel="prefetch" href="/platform-manual/assets/js/10.4faa1add.js"><link rel="prefetch" href="/platform-manual/assets/js/11.af6e2af1.js"><link rel="prefetch" href="/platform-manual/assets/js/12.2196d096.js"><link rel="prefetch" href="/platform-manual/assets/js/13.7b123a5d.js"><link rel="prefetch" href="/platform-manual/assets/js/14.93f4cfb8.js"><link rel="prefetch" href="/platform-manual/assets/js/15.f4e54a73.js"><link rel="prefetch" href="/platform-manual/assets/js/16.183aba83.js"><link rel="prefetch" href="/platform-manual/assets/js/17.b61c7c25.js"><link rel="prefetch" href="/platform-manual/assets/js/18.e25a6ce1.js"><link rel="prefetch" href="/platform-manual/assets/js/19.13730528.js"><link rel="prefetch" href="/platform-manual/assets/js/20.8e96cb33.js"><link rel="prefetch" href="/platform-manual/assets/js/21.5fd970c5.js"><link rel="prefetch" href="/platform-manual/assets/js/22.0fa07d0c.js"><link rel="prefetch" href="/platform-manual/assets/js/23.559d6ab1.js"><link rel="prefetch" href="/platform-manual/assets/js/24.51bbef87.js"><link rel="prefetch" href="/platform-manual/assets/js/25.6c89e5ec.js"><link rel="prefetch" href="/platform-manual/assets/js/26.c7ea8123.js"><link rel="prefetch" href="/platform-manual/assets/js/27.e40a8d39.js"><link rel="prefetch" href="/platform-manual/assets/js/28.0c919fb4.js"><link rel="prefetch" href="/platform-manual/assets/js/29.de9e3729.js"><link rel="prefetch" href="/platform-manual/assets/js/3.34744817.js"><link rel="prefetch" href="/platform-manual/assets/js/30.92033702.js"><link rel="prefetch" href="/platform-manual/assets/js/31.4a4529c6.js"><link rel="prefetch" href="/platform-manual/assets/js/32.b9288eac.js"><link rel="prefetch" href="/platform-manual/assets/js/33.a05afb5b.js"><link rel="prefetch" href="/platform-manual/assets/js/34.e34ec564.js"><link rel="prefetch" href="/platform-manual/assets/js/35.fd0038c1.js"><link rel="prefetch" href="/platform-manual/assets/js/36.d75cdf64.js"><link rel="prefetch" href="/platform-manual/assets/js/38.d85c3e7b.js"><link rel="prefetch" href="/platform-manual/assets/js/39.9fe64d3a.js"><link rel="prefetch" href="/platform-manual/assets/js/4.20b0f4fb.js"><link rel="prefetch" href="/platform-manual/assets/js/40.a265a31a.js"><link rel="prefetch" href="/platform-manual/assets/js/41.f2203816.js"><link rel="prefetch" href="/platform-manual/assets/js/42.1bf588fd.js"><link rel="prefetch" href="/platform-manual/assets/js/43.9408322f.js"><link rel="prefetch" href="/platform-manual/assets/js/44.14c53b3e.js"><link rel="prefetch" href="/platform-manual/assets/js/45.7c2e0b47.js"><link rel="prefetch" href="/platform-manual/assets/js/46.143dfe06.js"><link rel="prefetch" href="/platform-manual/assets/js/47.2fae478c.js"><link rel="prefetch" href="/platform-manual/assets/js/48.d495c4b4.js"><link rel="prefetch" href="/platform-manual/assets/js/49.ca1a9134.js"><link rel="prefetch" href="/platform-manual/assets/js/5.4467e3b1.js"><link rel="prefetch" href="/platform-manual/assets/js/50.7c58d01b.js"><link rel="prefetch" href="/platform-manual/assets/js/51.c90c7949.js"><link rel="prefetch" href="/platform-manual/assets/js/52.836f4fbb.js"><link rel="prefetch" href="/platform-manual/assets/js/53.b4239e5f.js"><link rel="prefetch" href="/platform-manual/assets/js/54.44ad3ed8.js"><link rel="prefetch" href="/platform-manual/assets/js/55.419d4dea.js"><link rel="prefetch" href="/platform-manual/assets/js/56.73dc24e8.js"><link rel="prefetch" href="/platform-manual/assets/js/57.2cc3f09d.js"><link rel="prefetch" href="/platform-manual/assets/js/6.7be4879b.js"><link rel="prefetch" href="/platform-manual/assets/js/7.10967748.js"><link rel="prefetch" href="/platform-manual/assets/js/vendors~docsearch.5d977022.js">
+    <link rel="stylesheet" href="/platform-manual/assets/css/0.styles.444e56a2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/platform-manual/" aria-current="page" class="home-link router-link-exact-active router-link-active"><!----> <span class="site-name">项目级 DIM 操作手册</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/platform-manual/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  
+</a></div><div class="nav-item"><a href="/platform-manual/introduce/index.html" class="nav-link">
+  介绍
+</a></div><div class="nav-item"><a href="/platform-manual/dlxt/dlxt.html" class="nav-link">
+  登录系统
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础工作" class="dropdown-title"><span class="title">基础工作</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础工作" class="mobile-dropdown-title"><span class="title">基础工作</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/platform-manual/jcgz/jgzh.html" class="nav-link">
+  监管账户
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/jcgz/gcht.html" class="nav-link">
+  工程合同
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/jcgz/cjdw.html" class="nav-link">
+  参建单位
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="财务管理" class="dropdown-title"><span class="title">财务管理</span> <span class="arrow down"></span></button> <button type="button" aria-label="财务管理" class="mobile-dropdown-title"><span class="title">财务管理</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/platform-manual/cwgl/zjsb.html" class="nav-link">
+  资金申报
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/cwgl/zfsq.html" class="nav-link">
+  支付申请
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/cwgl/jcxx.html" class="nav-link">
+  基础信息
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/cwgl/sjfx.html" class="nav-link">
+  数据分析
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目前期" class="dropdown-title"><span class="title">项目前期</span> <span class="arrow down"></span></button> <button type="button" aria-label="项目前期" class="mobile-dropdown-title"><span class="title">项目前期</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/platform-manual/xmqq/lx.html" class="nav-link">
+  立项
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/xmqq/glfp.html" class="nav-link">
+  管理分配
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/xmqq/cs.html" class="nav-link">
+  初设
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/xmqq/ztb.html" class="nav-link">
+  招投标
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/xmqq/xmml.html" class="nav-link">
+  项目名录
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/xmqq/gcht.html" class="nav-link">
+  工程合同
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/xmqq/tzsj.html" class="nav-link">
+  图纸设计
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目管理" class="dropdown-title"><span class="title">项目管理</span> <span class="arrow down"></span></button> <button type="button" aria-label="项目管理" class="mobile-dropdown-title"><span class="title">项目管理</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/platform-manual/xmgl/sjfx.html" class="nav-link">
+  数据分析
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/xmgl/htgl.html" class="nav-link">
+  合同管理
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/xmgl/gysgl.html" class="nav-link">
+  供应商管理
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/xmgl/fpgl.html" class="nav-link">
+  发票管理
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/xmgl/wzgl.html" class="nav-link">
+  物资管理
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/xmgl/lwgl.html" class="nav-link">
+  劳务管理
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/xmgl/sggl.html" class="nav-link">
+  施工管理
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/xmgl/jdgl.html" class="nav-link">
+  进度管理
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/xmgl/xcgl.html" class="nav-link">
+  巡查管理
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/xmgl/zxjc.html" class="nav-link">
+  专项检查
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="运维管理" class="dropdown-title"><span class="title">运维管理</span> <span class="arrow down"></span></button> <button type="button" aria-label="运维管理" class="mobile-dropdown-title"><span class="title">运维管理</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/platform-manual/ywgl/bxd.html" class="nav-link">
+  报修单
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/ywgl/wxd.html" class="nav-link">
+  维修单
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="一码通" class="dropdown-title"><span class="title">一码通</span> <span class="arrow down"></span></button> <button type="button" aria-label="一码通" class="mobile-dropdown-title"><span class="title">一码通</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/platform-manual/ymt/fywt.html" class="nav-link">
+  反映问题
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/ymt/clwt.html" class="nav-link">
+  处理问题
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/platform-manual/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  
+</a></div><div class="nav-item"><a href="/platform-manual/introduce/index.html" class="nav-link">
+  介绍
+</a></div><div class="nav-item"><a href="/platform-manual/dlxt/dlxt.html" class="nav-link">
+  登录系统
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础工作" class="dropdown-title"><span class="title">基础工作</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础工作" class="mobile-dropdown-title"><span class="title">基础工作</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/platform-manual/jcgz/jgzh.html" class="nav-link">
+  监管账户
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/jcgz/gcht.html" class="nav-link">
+  工程合同
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/jcgz/cjdw.html" class="nav-link">
+  参建单位
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="财务管理" class="dropdown-title"><span class="title">财务管理</span> <span class="arrow down"></span></button> <button type="button" aria-label="财务管理" class="mobile-dropdown-title"><span class="title">财务管理</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/platform-manual/cwgl/zjsb.html" class="nav-link">
+  资金申报
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/cwgl/zfsq.html" class="nav-link">
+  支付申请
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/cwgl/jcxx.html" class="nav-link">
+  基础信息
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/cwgl/sjfx.html" class="nav-link">
+  数据分析
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目前期" class="dropdown-title"><span class="title">项目前期</span> <span class="arrow down"></span></button> <button type="button" aria-label="项目前期" class="mobile-dropdown-title"><span class="title">项目前期</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/platform-manual/xmqq/lx.html" class="nav-link">
+  立项
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/xmqq/glfp.html" class="nav-link">
+  管理分配
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/xmqq/cs.html" class="nav-link">
+  初设
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/xmqq/ztb.html" class="nav-link">
+  招投标
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/xmqq/xmml.html" class="nav-link">
+  项目名录
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/xmqq/gcht.html" class="nav-link">
+  工程合同
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/xmqq/tzsj.html" class="nav-link">
+  图纸设计
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目管理" class="dropdown-title"><span class="title">项目管理</span> <span class="arrow down"></span></button> <button type="button" aria-label="项目管理" class="mobile-dropdown-title"><span class="title">项目管理</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/platform-manual/xmgl/sjfx.html" class="nav-link">
+  数据分析
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/xmgl/htgl.html" class="nav-link">
+  合同管理
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/xmgl/gysgl.html" class="nav-link">
+  供应商管理
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/xmgl/fpgl.html" class="nav-link">
+  发票管理
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/xmgl/wzgl.html" class="nav-link">
+  物资管理
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/xmgl/lwgl.html" class="nav-link">
+  劳务管理
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/xmgl/sggl.html" class="nav-link">
+  施工管理
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/xmgl/jdgl.html" class="nav-link">
+  进度管理
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/xmgl/xcgl.html" class="nav-link">
+  巡查管理
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/xmgl/zxjc.html" class="nav-link">
+  专项检查
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="运维管理" class="dropdown-title"><span class="title">运维管理</span> <span class="arrow down"></span></button> <button type="button" aria-label="运维管理" class="mobile-dropdown-title"><span class="title">运维管理</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/platform-manual/ywgl/bxd.html" class="nav-link">
+  报修单
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/ywgl/wxd.html" class="nav-link">
+  维修单
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="一码通" class="dropdown-title"><span class="title">一码通</span> <span class="arrow down"></span></button> <button type="button" aria-label="一码通" class="mobile-dropdown-title"><span class="title">一码通</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/platform-manual/ymt/fywt.html" class="nav-link">
+  反映问题
+</a></li><li class="dropdown-item"><!----> <a href="/platform-manual/ymt/clwt.html" class="nav-link">
+  处理问题
+</a></li></ul></div></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><html lang="zh-CN"><head><meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>项目级 DIM 操作手册</title> <style>
+    /* 全局样式重置 */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    /* 定义颜色变量 */
+    :root {
+      --accent-color: #4CAF50;
+      --text-color: #333;
+      --text-light-color: #666;
+      --border-color: #f0f2f5;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text-color);
+    }
+    .custom-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top:100px;
+      margin-bottom: 3rem;
+    }
+    .header-logo {
+      width: 260px; 
+      height: auto;
+    }
+    .header-title {
+      font-size: 2.5rem;
+      margin: 24px     ;
+    }
+    .header-subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .button-container {
+      display: flex;
+      gap: 1rem;
+    }
+    .custom-button {
+      padding: 0.8rem 1.6rem;
+      border: 2px solid transparent;
+      border-radius: 4px;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.3s ease;
+    }
+    .custom-button.primary {
+      background-color: var(--accent-color);
+      color: white;
+    }
+    .custom-button.secondary {
+      background-color: transparent;
+      border-color: var(--accent-color);
+      color: var(--accent-color);
+    }
+    .custom-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .custom-button.primary:hover {
+      background-color: #43a047;
+    }
+    .custom-button.secondary:hover {
+      background-color: var(--accent-color);
+      color: white;
+    }
+    .features-section {
+      text-align: center;
+    }
+    .features-container {
+      max-width: 900px;
+      margin: 0 auto;
+      /* padding: 0 1rem; */
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem; /* 增大间距 */
+    }
+    .feature-card {
+      display: block;
+      background: #fff;
+      border-radius: 10px;
+      padding: 10px 20px; /* 增大内边距 */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 简化box-shadow */
+      transition: all 0.3s ease;
+      text-align: center;
+      border: 1px solid var(--border-color);
+      color: inherit;
+      text-decoration: none;
+    }
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    .feature-icon {
+      font-size: 3rem; /* 增大图标尺寸 */
+      margin-bottom: 1.5rem;
+      color: var(--accent-color);
+    }
+    .feature-card h3 {
+      color: var(--text-color);
+      margin: 0 0 1rem; /* 简化margin */
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+    .feature-card p {
+      color: var(--text-light-color);
+      margin: 0;
+      font-size: 1rem; /* 增大文字尺寸 */
+      line-height: 1.5;
+    }
+    /* 响应式设计 */
+    @media (max-width: 900px) {
+     .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.8rem;
+      }
+    }
+    @media (max-width: 600px) {
+     .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+     .feature-card {
+        padding: 1.8rem;
+      }
+    }
+  </style></head> <body><section class="features-section"><header class="custom-header"><img src="/platform-manual/assets/img/logo.50d1eebc.png" alt="数管平台" class="header-logo"> <h1 class="header-title">数管平台</h1> <div class="button-container"><a href="/dlxt/登录系统.html" class="route-link auto-link vp-hero-action-button primary custom-button">快速上手</a> <a href="/introduce/index.html" class="route-link auto-link vp-hero-action-button secondary custom-button">项目简介</a></div></header> <div class="features-container"><div class="features-grid"><a href="/jcgz/监管账户.html" class="feature-card"><div class="feature-icon">🏦</div> <h3>基础工作</h3> <p>涵盖监管账户、工程合同等相关业务</p></a> <a href="/cwgl/资金申报.html" class="feature-card"><div class="feature-icon">💰</div> <h3>财务管理</h3> <p>包含资金申报、支付申请等财务流程</p></a> <a href="/xmqq/立项.html" class="feature-card"><div class="feature-icon">🏗️</div> <h3>项目前期</h3> <p>涉及立项、招投标等前期事务</p></a> <a href="/xmgl/数据分析.html" class="feature-card"><div class="feature-icon">📅</div> <h3>项目管理</h3> <p>包含进度管理、施工管理等项目管控工作</p></a> <a href="/ywgl/报修单.html" class="feature-card"><div class="feature-icon">🛠️</div> <h3>运维管理</h3> <p>负责报修单处理、维修单跟进等运维事宜</p></a> <a href="/ymt/反映问题.html" class="feature-card"><div class="feature-icon">📱</div> <h3>一码通</h3> <p>实现问题反映与处理等相关功能</p></a></div></div></section></body></html></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/platform-manual/assets/js/app.fd8db731.js" defer></script><script src="/platform-manual/assets/js/2.5ccdfed2.js" defer></script><script src="/platform-manual/assets/js/1.2c5ca5d0.js" defer></script><script src="/platform-manual/assets/js/37.a77d1b29.js" defer></script>
+  </body>
+</html>

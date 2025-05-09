@@ -1,0 +1,135 @@
+// 主题颜色相关
+// 主题主色调，用于按钮、链接等强调元素
+$accentColor = #3eaf7c 
+// 正文文字颜色
+$textColor = #2c3e50 
+// 边框颜色
+$borderColor = #eaecef 
+// 代码块背景颜色
+$codeBgColor = #282c34 
+// 箭头等小图标背景颜色
+$arrowBgColor = #ccc 
+// 提示徽章（如成功提示）颜色
+$badgeTipColor = #42b983 
+// 警告徽章颜色
+$badgeWarningColor = darken(#ffe564, 35%) 
+// 错误徽章颜色
+$badgeErrorColor = #DA5961 
+
+// 布局尺寸相关
+// 导航栏高度
+$navbarHeight = 3.6rem 
+// 侧边栏宽度
+$sidebarWidth = 18rem 
+// 内容区域宽度
+$contentWidth = 900px 
+// 首页内容区域宽度
+$homePageWidth = 960px 
+
+// 响应式断点相关
+// 窄屏断点，小于此宽度触发窄屏样式
+$MQNarrow = 959px 
+// 移动端断点，小于此宽度触发移动端样式
+$MQMobile = 719px 
+// 小屏移动端断点，小于此宽度进一步调整样式
+$MQMobileNarrow = 419px 
+
+// 导航栏样式相关
+// 导航栏背景颜色
+$navbarBackground = #fff 
+// 导航栏文字颜色
+$navbarTextColor = $textColor 
+// 导航栏激活项（当前选中项）颜色
+$navbarActiveColor = $accentColor 
+// 导航栏下拉菜单背景颜色
+$navbarDropdownBackground = #fff 
+
+// 侧边栏样式相关
+// 侧边栏背景颜色
+$sidebarBackground = #fff 
+// 侧边栏文字颜色
+$sidebarTextColor = #4a4a4a 
+// 侧边栏激活项（当前选中项）颜色
+$sidebarActiveColor = $accentColor 
+// 侧边栏分组标题文字颜色
+$sidebarGroupTextColor = #2c3e50 
+
+// 链接样式相关
+// 链接默认颜色
+$linkColor = $accentColor 
+// 链接悬停颜色
+$linkHoverColor = darken($accentColor, 15%) 
+
+// 自定义容器样式相关
+// 提示框（.custom-block.tip ）边框颜色
+$tipColor = $accentColor 
+// 警告框（.custom-block.warning ）边框颜色
+$warningColor = #e7c000 
+// 危险框（.custom-block.danger ）边框颜色
+$dangerColor = #cc0000 
+// 详情框（details 元素）背景颜色
+$detailsBgColor = #f8f8f8 
+
+// 代码块样式相关
+// 代码块行号显示区域宽度
+$lineNumbersWrapperWidth = 3.5rem 
+// 支持的代码语言列表，用于语法高亮
+$codeLang = 'js' 'ts' 'html' 'md' 'vue' 'css' 'sass' 'scss' 'less' 'stylus' 'go' 'java' 'c' 'sh' 'yaml' 'py' 'docker' 'dockerfile' 'makefile' 
+
+// 搜索框样式相关
+// 搜索框背景颜色
+$searchBgColor = #f3f4f5 
+// 搜索框边框颜色
+$searchBorderColor = $borderColor 
+
+// 按钮样式相关
+// 按钮默认背景颜色
+$buttonColor = $accentColor 
+// 按钮悬停背景颜色
+$buttonHoverColor = lighten($buttonColor, 10%) 
+
+// 导航栏相关样式定义
+.navbar {
+  display: flex
+}
+.navbar .site-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: $textColor;
+  flex-grow: 0 !important;  // 禁止自动填充空间
+  margin-right: 2rem;       // 与右侧菜单保持距离
+  white-space: nowrap;      // 防止文字换行
+}
+
+// 响应式样式调整
+@media (max-width: $MQMobile) {
+  .navbar .site-name {
+    padding-left: 0.5rem;
+    font-size: 1.2rem;
+  }
+  .sidebar {
+    transform: translateX(-100%);
+    width: $sidebarWidth !important;
+  }
+}
+
+// 侧边栏分组标题样式定义
+.sidebar-group {
+  &.is-sub-group > .sidebar-heading {
+    font-size: 0.95em;
+    color: $sidebarGroupTextColor;
+  }
+}
+
+// 自定义容器样式定义
+.custom-block {
+  &.tip {
+    border-color: $tipColor;
+  }
+  &.warning {
+    border-color: $warningColor;
+  }
+  &.danger {
+    border-color: $dangerColor;
+  }
+}

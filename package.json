@@ -1,25 +1,24 @@
 {
-  "name": "my-vuepress-site",
-  "version": "0.0.1",
-  "description": "A VuePress project",
-  "license": "MIT",
-  "type": "module",
+  "name": "mplatformmanual",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "build": "vuepress build docs",
-    "docs:clean-dev": "vuepress dev docs --clean-cache",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vuepress dev docs",
-    "docs:update-package": "npx vp-update"
+    "build": "vuepress build docs --dest public"  , 
+    "build:prod": "vuepress build docs --dest public"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
   "devDependencies": {
-    "@vuepress/bundler-vite": "2.0.0-rc.7",
-    "@vuepress/theme-default": "2.0.0-rc.90",
-    "sass": "^1.86.0",
-    "sass-embedded": "^1.86.0",
-    "vue": "^3.5.13",
-    "vuepress": "2.0.0-rc.20"
+    "@vuepress/plugin-search": "^1.9.10",
+    "vue": "^2.7.16",
+    "vuepress": "^1.9.10"
   },
   "dependencies": {
-    "@vueuse/core": "^13.0.0",
-    "axios": "^1.8.4"
+    "@vuepress/bundler-vite": "^2.0.0-rc.7"
   }
 }

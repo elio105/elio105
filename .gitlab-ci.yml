@@ -1,0 +1,20 @@
+image: node:18  # 必须使用 Node 18+（因依赖要求）
+
+stages:
+  - deploy
+
+pages:
+  stage: deploy
+  cache:
+    paths:
+      - node_modules/  # 缓存依赖加速构建
+  script:
+    - npm install
+    - npm run build    # 自动生成 public/（由 --dest public 指定）
+    - ls -la public/   # 调试：确认输出目录
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
+  retry: 2             # 失败时自动重试
