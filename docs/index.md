@@ -147,44 +147,44 @@
       <h1 class="header-title">数管平台</h1>
       <!-- <p class="header-subtitle">建筑工程项目全生命周期数字化管理系统项目级别操作手册</p> -->
       <div class="button-container">
-        <a href="/dlxt/登录系统.html" class="route-link auto-link vp-hero-action-button primary custom-button">快速上手</a>
-        <a href="/introduce/index.html" class="route-link auto-link vp-hero-action-button secondary custom-button">项目简介</a>
+        <a href="./dlxt/dlxt.html" class="route-link auto-link vp-hero-action-button primary custom-button">快速上手</a>
+        <a href="./introduce/index.html" class="route-link auto-link vp-hero-action-button secondary custom-button">项目简介</a>
       </div>
     </header>
     <div class="features-container">
       <div class="features-grid">
         <!-- 基础工作 -->
-        <a href="/jcgz/监管账户.html" class="feature-card">
+        <a href="./jcgz/jgzh.html" class="feature-card">
           <div class="feature-icon">🏦</div>
           <h3>基础工作</h3>
           <p>涵盖监管账户、工程合同等相关业务</p>
         </a>
         <!-- 财务管理 -->
-        <a href="/cwgl/资金申报.html" class="feature-card">
+        <a href="./cwgl/zjsb.html" class="feature-card">
           <div class="feature-icon">💰</div>
           <h3>财务管理</h3>
           <p>包含资金申报、支付申请等财务流程</p>
         </a>
         <!-- 项目前期 -->
-        <a href="/xmqq/立项.html" class="feature-card">
+        <a href="./xmqq/xmml.html" class="feature-card">
           <div class="feature-icon">🏗️</div>
           <h3>项目前期</h3>
           <p>涉及立项、招投标等前期事务</p>
         </a>
         <!-- 项目管理 -->
-        <a href="/xmgl/数据分析.html" class="feature-card">
+        <a href="./xmgl/sjfx.html" class="feature-card">
           <div class="feature-icon">📅</div>
           <h3>项目管理</h3>
           <p>包含进度管理、施工管理等项目管控工作</p>
         </a>
         <!-- 运维管理 -->
-        <a href="/ywgl/报修单.html" class="feature-card">
+        <a href="./ywgl/bxd.html" class="feature-card">
           <div class="feature-icon">🛠️</div>
           <h3>运维管理</h3>
           <p>负责报修单处理、维修单跟进等运维事宜</p>
         </a>
         <!-- 一码通 -->
-        <a href="/ymt/反映问题.html" class="feature-card">
+        <a href="./ymt/fywt.html" class="feature-card">
           <div class="feature-icon">📱</div>
           <h3>一码通</h3>
           <p>实现问题反映与处理等相关功能</p>

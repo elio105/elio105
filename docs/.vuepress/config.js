@@ -3,7 +3,7 @@ module.exports = {
     dest: '../../public', 
     title: '项目级 DIM 操作手册',
     head: [
-      // ['link', { rel: 'icon', href: './favicon.ico' }]ces 
+      // ['link', { rel: 'icon', href: './favicon.ico' }]
     ],
     themeConfig: {
       nav: [
@@ -16,6 +16,7 @@ module.exports = {
           link: '/introduce/index.md' // 这里的'/'表示首页路径，可根据实际情况调整
         },
         { text: '登录系统', link: '/dlxt/dlxt.md' },
+        { text: '工作台', link: '/gzt/gzt.md' },
         // { text: '工作台', link: 'gzt/工作台.md' },
         // {
         //   title: '登录系统',
@@ -44,10 +45,6 @@ module.exports = {
         {
           text: '项目前期',
           items: [
-            { text: '立项', link: '/xmqq/lx.md' },
-            { text: '管理分配', link: '/xmqq/glfp.md' },
-            { text: '初设', link: '/xmqq/cs.md' },
-            { text: '招投标', link: '/xmqq/ztb.md' },
             { text: '项目名录', link: '/xmqq/xmml.md' },
             { text: '工程合同', link: '/xmqq/gcht.md' },
             { text: '图纸设计', link: '/xmqq/tzsj.md' }
@@ -117,10 +114,6 @@ module.exports = {
             title: '项目前期',
             collapsable: false,
             children: [
-              ['/xmqq/lx.md', '立项'],
-              ['/xmqq/glfp.md', '管理分配'],
-              ['/xmqq/cs.md', '初设'],
-              ['/xmqq/ztb.md', '招投标'],
               ['/xmqq/xmml.md', '项目名录'],
               ['/xmqq/gcht.md', '工程合同'],
               ['/xmqq/tzsj.md', '图纸设计']
