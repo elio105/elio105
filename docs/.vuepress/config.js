@@ -1,5 +1,5 @@
 module.exports = {
-    base: '/platform-manual/',
+    base: '/elio105/',
     dest: '../../public', 
     title: '项目级 DIM 操作手册',
     head: [
