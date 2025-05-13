@@ -1,5 +1,5 @@
 module.exports = {
-    base: '/',
+    base: '/elio105/', 
     dest: './.vuepress/dist', 
     title: '项目级 DIM 操作手册',
     head: [
