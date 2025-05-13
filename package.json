@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs --dest public"  , 
-    "build:prod": "vuepress build docs --dest public"
+    "dev": "vuepress dev docs", 
+    "build": "vuepress build docs", 
+    "build:prod": "vuepress build docs"
   },
   "keywords": [],
   "author": "",
