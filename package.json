@@ -19,6 +19,5 @@
     "vuepress": "^1.9.10"
   },
   "dependencies": {
-    "@vuepress/bundler-vite": "^2.0.0-rc.7"
   }
 }

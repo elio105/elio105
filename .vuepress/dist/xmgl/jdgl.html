@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>8.进度管理 | 项目级 DIM 操作手册</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.7a4d4867.css" as="style"><link rel="preload" href="/assets/js/app.e2ba30f4.js" as="script"><link rel="preload" href="/assets/js/2.1cf6bdd5.js" as="script"><link rel="preload" href="/assets/js/1.5d75dbb5.js" as="script"><link rel="preload" href="/assets/js/32.6aee34f3.js" as="script"><link rel="prefetch" href="/assets/js/10.30ff25dc.js"><link rel="prefetch" href="/assets/js/11.44c8bfa2.js"><link rel="prefetch" href="/assets/js/12.3f583698.js"><link rel="prefetch" href="/assets/js/13.013bc36c.js"><link rel="prefetch" href="/assets/js/14.17ad12da.js"><link rel="prefetch" href="/assets/js/15.7b654b9f.js"><link rel="prefetch" href="/assets/js/16.e939bb15.js"><link rel="prefetch" href="/assets/js/17.26d79dc2.js"><link rel="prefetch" href="/assets/js/18.378ef517.js"><link rel="prefetch" href="/assets/js/19.4c1aae47.js"><link rel="prefetch" href="/assets/js/20.9d4e9f5b.js"><link rel="prefetch" href="/assets/js/21.2aa8c9f7.js"><link rel="prefetch" href="/assets/js/22.5d76642c.js"><link rel="prefetch" href="/assets/js/23.e3a50fb8.js"><link rel="prefetch" href="/assets/js/24.bf2f5ff8.js"><link rel="prefetch" href="/assets/js/25.5133f47e.js"><link rel="prefetch" href="/assets/js/26.2c8adbcf.js"><link rel="prefetch" href="/assets/js/27.354784a0.js"><link rel="prefetch" href="/assets/js/28.45c93259.js"><link rel="prefetch" href="/assets/js/29.b7676e9e.js"><link rel="prefetch" href="/assets/js/3.c7b620ec.js"><link rel="prefetch" href="/assets/js/30.63fd5848.js"><link rel="prefetch" href="/assets/js/31.30f96218.js"><link rel="prefetch" href="/assets/js/33.fab36144.js"><link rel="prefetch" href="/assets/js/34.2dddef3b.js"><link rel="prefetch" href="/assets/js/35.a0b16110.js"><link rel="prefetch" href="/assets/js/36.4069b021.js"><link rel="prefetch" href="/assets/js/37.42615eff.js"><link rel="prefetch" href="/assets/js/38.a06a91eb.js"><link rel="prefetch" href="/assets/js/39.27305e39.js"><link rel="prefetch" href="/assets/js/4.5d9f643e.js"><link rel="prefetch" href="/assets/js/40.67c940d5.js"><link rel="prefetch" href="/assets/js/41.bb0f82f0.js"><link rel="prefetch" href="/assets/js/42.9d4a0b36.js"><link rel="prefetch" href="/assets/js/43.1c3d15bb.js"><link rel="prefetch" href="/assets/js/44.4ffc6df0.js"><link rel="prefetch" href="/assets/js/45.f48989a2.js"><link rel="prefetch" href="/assets/js/46.f3e02920.js"><link rel="prefetch" href="/assets/js/47.1144f6de.js"><link rel="prefetch" href="/assets/js/48.d43d8e84.js"><link rel="prefetch" href="/assets/js/49.5a8db133.js"><link rel="prefetch" href="/assets/js/5.d57884d2.js"><link rel="prefetch" href="/assets/js/50.26183c2b.js"><link rel="prefetch" href="/assets/js/51.d7edbcd6.js"><link rel="prefetch" href="/assets/js/52.7e3cb0f8.js"><link rel="prefetch" href="/assets/js/53.993f5f03.js"><link rel="prefetch" href="/assets/js/54.32ef8da7.js"><link rel="prefetch" href="/assets/js/55.99c10f3b.js"><link rel="prefetch" href="/assets/js/56.5259259b.js"><link rel="prefetch" href="/assets/js/57.fb9b667a.js"><link rel="prefetch" href="/assets/js/6.b357dc8c.js"><link rel="prefetch" href="/assets/js/7.d6433b11.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.401404cb.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7a4d4867.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">项目级 DIM 操作手册</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  
+</a></div><div class="nav-item"><a href="/introduce/index.html" class="nav-link">
+  介绍
+</a></div><div class="nav-item"><a href="/dlxt/dlxt.html" class="nav-link">
+  登录系统
+</a></div><div class="nav-item"><a href="/gzt/gzt.html" class="nav-link">
+  工作台
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础工作" class="dropdown-title"><span class="title">基础工作</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础工作" class="mobile-dropdown-title"><span class="title">基础工作</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/jcgz/jgzh.html" class="nav-link">
+  监管账户
+</a></li><li class="dropdown-item"><!----> <a href="/jcgz/gcht.html" class="nav-link">
+  工程合同
+</a></li><li class="dropdown-item"><!----> <a href="/jcgz/cjdw.html" class="nav-link">
+  参建单位
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="财务管理" class="dropdown-title"><span class="title">财务管理</span> <span class="arrow down"></span></button> <button type="button" aria-label="财务管理" class="mobile-dropdown-title"><span class="title">财务管理</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/cwgl/zjsb.html" class="nav-link">
+  资金申报
+</a></li><li class="dropdown-item"><!----> <a href="/cwgl/zfsq.html" class="nav-link">
+  支付申请
+</a></li><li class="dropdown-item"><!----> <a href="/cwgl/jcxx.html" class="nav-link">
+  基础信息
+</a></li><li class="dropdown-item"><!----> <a href="/cwgl/sjfx.html" class="nav-link">
+  数据分析
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目前期" class="dropdown-title"><span class="title">项目前期</span> <span class="arrow down"></span></button> <button type="button" aria-label="项目前期" class="mobile-dropdown-title"><span class="title">项目前期</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/xmqq/xmml.html" class="nav-link">
+  项目名录
+</a></li><li class="dropdown-item"><!----> <a href="/xmqq/gcht.html" class="nav-link">
+  工程合同
+</a></li><li class="dropdown-item"><!----> <a href="/xmqq/tzsj.html" class="nav-link">
+  图纸设计
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目管理" class="dropdown-title"><span class="title">项目管理</span> <span class="arrow down"></span></button> <button type="button" aria-label="项目管理" class="mobile-dropdown-title"><span class="title">项目管理</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/xmgl/sjfx.html" class="nav-link">
+  数据分析
+</a></li><li class="dropdown-item"><!----> <a href="/xmgl/htgl.html" class="nav-link">
+  合同管理
+</a></li><li class="dropdown-item"><!----> <a href="/xmgl/gysgl.html" class="nav-link">
+  供应商管理
+</a></li><li class="dropdown-item"><!----> <a href="/xmgl/fpgl.html" class="nav-link">
+  发票管理
+</a></li><li class="dropdown-item"><!----> <a href="/xmgl/wzgl.html" class="nav-link">
+  物资管理
+</a></li><li class="dropdown-item"><!----> <a href="/xmgl/lwgl.html" class="nav-link">
+  劳务管理
+</a></li><li class="dropdown-item"><!----> <a href="/xmgl/sggl.html" class="nav-link">
+  施工管理
+</a></li><li class="dropdown-item"><!----> <a href="/xmgl/jdgl.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  进度管理
+</a></li><li class="dropdown-item"><!----> <a href="/xmgl/xcgl.html" class="nav-link">
+  巡查管理
+</a></li><li class="dropdown-item"><!----> <a href="/xmgl/zxjc.html" class="nav-link">
+  专项检查
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="运维管理" class="dropdown-title"><span class="title">运维管理</span> <span class="arrow down"></span></button> <button type="button" aria-label="运维管理" class="mobile-dropdown-title"><span class="title">运维管理</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ywgl/bxd.html" class="nav-link">
+  报修单
+</a></li><li class="dropdown-item"><!----> <a href="/ywgl/wxd.html" class="nav-link">
+  维修单
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="一码通" class="dropdown-title"><span class="title">一码通</span> <span class="arrow down"></span></button> <button type="button" aria-label="一码通" class="mobile-dropdown-title"><span class="title">一码通</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ymt/fywt.html" class="nav-link">
+  反映问题
+</a></li><li class="dropdown-item"><!----> <a href="/ymt/clwt.html" class="nav-link">
+  处理问题
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  
+</a></div><div class="nav-item"><a href="/introduce/index.html" class="nav-link">
+  介绍
+</a></div><div class="nav-item"><a href="/dlxt/dlxt.html" class="nav-link">
+  登录系统
+</a></div><div class="nav-item"><a href="/gzt/gzt.html" class="nav-link">
+  工作台
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础工作" class="dropdown-title"><span class="title">基础工作</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础工作" class="mobile-dropdown-title"><span class="title">基础工作</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/jcgz/jgzh.html" class="nav-link">
+  监管账户
+</a></li><li class="dropdown-item"><!----> <a href="/jcgz/gcht.html" class="nav-link">
+  工程合同
+</a></li><li class="dropdown-item"><!----> <a href="/jcgz/cjdw.html" class="nav-link">
+  参建单位
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="财务管理" class="dropdown-title"><span class="title">财务管理</span> <span class="arrow down"></span></button> <button type="button" aria-label="财务管理" class="mobile-dropdown-title"><span class="title">财务管理</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/cwgl/zjsb.html" class="nav-link">
+  资金申报
+</a></li><li class="dropdown-item"><!----> <a href="/cwgl/zfsq.html" class="nav-link">
+  支付申请
+</a></li><li class="dropdown-item"><!----> <a href="/cwgl/jcxx.html" class="nav-link">
+  基础信息
+</a></li><li class="dropdown-item"><!----> <a href="/cwgl/sjfx.html" class="nav-link">
+  数据分析
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目前期" class="dropdown-title"><span class="title">项目前期</span> <span class="arrow down"></span></button> <button type="button" aria-label="项目前期" class="mobile-dropdown-title"><span class="title">项目前期</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/xmqq/xmml.html" class="nav-link">
+  项目名录
+</a></li><li class="dropdown-item"><!----> <a href="/xmqq/gcht.html" class="nav-link">
+  工程合同
+</a></li><li class="dropdown-item"><!----> <a href="/xmqq/tzsj.html" class="nav-link">
+  图纸设计
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目管理" class="dropdown-title"><span class="title">项目管理</span> <span class="arrow down"></span></button> <button type="button" aria-label="项目管理" class="mobile-dropdown-title"><span class="title">项目管理</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/xmgl/sjfx.html" class="nav-link">
+  数据分析
+</a></li><li class="dropdown-item"><!----> <a href="/xmgl/htgl.html" class="nav-link">
+  合同管理
+</a></li><li class="dropdown-item"><!----> <a href="/xmgl/gysgl.html" class="nav-link">
+  供应商管理
+</a></li><li class="dropdown-item"><!----> <a href="/xmgl/fpgl.html" class="nav-link">
+  发票管理
+</a></li><li class="dropdown-item"><!----> <a href="/xmgl/wzgl.html" class="nav-link">
+  物资管理
+</a></li><li class="dropdown-item"><!----> <a href="/xmgl/lwgl.html" class="nav-link">
+  劳务管理
+</a></li><li class="dropdown-item"><!----> <a href="/xmgl/sggl.html" class="nav-link">
+  施工管理
+</a></li><li class="dropdown-item"><!----> <a href="/xmgl/jdgl.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  进度管理
+</a></li><li class="dropdown-item"><!----> <a href="/xmgl/xcgl.html" class="nav-link">
+  巡查管理
+</a></li><li class="dropdown-item"><!----> <a href="/xmgl/zxjc.html" class="nav-link">
+  专项检查
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="运维管理" class="dropdown-title"><span class="title">运维管理</span> <span class="arrow down"></span></button> <button type="button" aria-label="运维管理" class="mobile-dropdown-title"><span class="title">运维管理</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ywgl/bxd.html" class="nav-link">
+  报修单
+</a></li><li class="dropdown-item"><!----> <a href="/ywgl/wxd.html" class="nav-link">
+  维修单
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="一码通" class="dropdown-title"><span class="title">一码通</span> <span class="arrow down"></span></button> <button type="button" aria-label="一码通" class="mobile-dropdown-title"><span class="title">一码通</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ymt/fywt.html" class="nav-link">
+  反映问题
+</a></li><li class="dropdown-item"><!----> <a href="/ymt/clwt.html" class="nav-link">
+  处理问题
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>项目管理</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/xmgl/sjfx.html" class="sidebar-link">数据分析</a></li><li><a href="/xmgl/htgl.html" class="sidebar-link">合同管理</a></li><li><a href="/xmgl/gysgl.html" class="sidebar-link">供应商管理</a></li><li><a href="/xmgl/fpgl.html" class="sidebar-link">发票管理</a></li><li><a href="/xmgl/wzgl.html" class="sidebar-link">物资管理</a></li><li><a href="/xmgl/lwgl.html" class="sidebar-link">劳务管理</a></li><li><a href="/xmgl/sggl.html" class="sidebar-link">施工管理</a></li><li><a href="/xmgl/jdgl.html" aria-current="page" class="active sidebar-link">进度管理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/xmgl/jdgl.html#_8-1-进度计划编制" class="sidebar-link">8.1 进度计划编制</a></li></ul></li><li><a href="/xmgl/xcgl.html" class="sidebar-link">巡查管理</a></li><li><a href="/xmgl/zxjc.html" class="sidebar-link">专项检查</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="_8-进度管理"><a href="#_8-进度管理" class="header-anchor">#</a> 8.进度管理</h1> <h2 id="_8-1-进度计划编制"><a href="#_8-1-进度计划编制" class="header-anchor">#</a> 8.1 进度计划编制</h2> <p><img src="/assets/img/jdjhbz.e3588b7d.png" alt="进度计划编制"></p> <hr> <h3 id="核心功能说明"><a href="#核心功能说明" class="header-anchor">#</a> 核心功能说明</h3> <p>进度计划编制是创建项目执行时间表的关键过程，主要包含以下元素：</p> <h4 id="计划要素"><a href="#计划要素" class="header-anchor">#</a> 计划要素</h4> <ol><li><p><strong>任务名称</strong></p> <ul><li>明确标识项目活动/工作包</li> <li>便于团队成员理解任务性质</li></ul></li> <li><p><strong>任务编号</strong></p> <ul><li>唯一标识符</li> <li>便于任务追踪和引用</li></ul></li> <li><p><strong>工期估算</strong></p> <ul><li>预测任务完成所需时间</li> <li>资源分配的基础依据</li></ul></li> <li><p><strong>日期设定</strong></p> <ul><li>开始日期：确定任务最早启动时间</li> <li>完成日期：设定任务最终期限</li></ul></li></ol> <h3 id="甘特图功能"><a href="#甘特图功能" class="header-anchor">#</a> 甘特图功能</h3> <p><img src="/assets/img/jdjhgtt.2aa1261e.png" alt="进度计划甘特图"></p> <hr> <h4 id="六大核心作用"><a href="#六大核心作用" class="header-anchor">#</a> 六大核心作用</h4> <ol><li><p><strong>可视化展示</strong></p> <ul><li>图形化呈现项目时间线</li> <li>清晰展示任务关联关系</li></ul></li> <li><p><strong>进度规划</strong></p> <ul><li>辅助制定任务时间安排</li> <li>识别关键路径和里程碑</li></ul></li> <li><p><strong>进度监控</strong></p> <ul><li>对比计划与实际进度</li> <li>及时发现进度偏差</li></ul></li> <li><p><strong>团队沟通</strong></p> <ul><li>统一团队进度认知</li> <li>促进跨部门协调</li></ul></li> <li><p><strong>资源管理</strong></p> <ul><li>可视化资源分配情况</li> <li>优化资源使用效率</li></ul></li> <li><p><strong>计划调整</strong></p> <ul><li>支持动态进度调整</li> <li>应对项目变更和延误</li></ul></li></ol> <h3 id="管理要求"><a href="#管理要求" class="header-anchor">#</a> 管理要求</h3> <p><strong>重要提示</strong>：项目开工后应及时编制施工进度计划并上传至数管平台</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/xmgl/sggl.html" class="prev">
+        施工管理
+      </a></span> <span class="next"><a href="/xmgl/xcgl.html">
+        巡查管理
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.e2ba30f4.js" defer></script><script src="/assets/js/2.1cf6bdd5.js" defer></script><script src="/assets/js/1.5d75dbb5.js" defer></script><script src="/assets/js/32.6aee34f3.js" defer></script>
+  </body>
+</html>
