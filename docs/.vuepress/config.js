@@ -1,6 +1,6 @@
 module.exports = {
     base: '/elio105/', 
-    dest: './.vuepress/dist', 
+    dest: '/docs/.vuepress/dist', 
     title: '项目级 DIM 操作手册',
     head: [
       // ['link', { rel: 'icon', href: './favicon.ico' }]
